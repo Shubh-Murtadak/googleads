@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:alpha="0.9"
+            android:id="@+id/iv_main_image1"
+            android:layout_width="match_parent"
+            android:layout_height="234dp"
+            android:scaleType="fitXY"
+            tools:background="#EDEDED" />
+
+
+        <com.google.android.gms.ads.nativead.MediaView
+            android:id="@+id/ad_media"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="234dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="223dp"
+            android:layout_marginBottom="-16dp"
+            android:background="?android:colorBackground"
+            app:cardCornerRadius="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="20dp">
+
+
+                <TextView
+                    android:id="@+id/tv_ad_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textFontWeight="700"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="jdhgcvbhcjbjhcbdjk" />
+
+
+                <TextView
+                    android:id="@+id/tv_ad_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textFontWeight="400"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_ad_heading"
+                    tools:text="fgcvhbjnkmfgcvhbjnkmfgcvhbjnkmfgcvhbjnkmfgcvhbjnkmfgcvhbjnkmfgcvhbjnkmfgcvhbjnkmfgcvhbjnkmfgcvhbjnkm" />
+
+
+                <LinearLayout
+
+                    android:id="@+id/ll_ad_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="24dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_ad_icon"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_advertisement"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
+                        android:text="Advertisement"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ad_cta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:paddingHorizontal="24dp"
+                        android:paddingVertical="7dp"
+                        android:textColor="#5cc0a6"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="Trade" />
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</com.google.android.gms.ads.nativead.NativeAdView>
